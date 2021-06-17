@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>QuickMirrorTypes/BlueRect.qml</file>
+        <file>QuickMirrorTypes/RedRect.qml</file>
+    </qresource>
+</RCC>
