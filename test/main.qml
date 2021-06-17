@@ -18,15 +18,9 @@ Window {
 
 	RedRect
 	{
-		id: rectangle
 		x: 350
 		y: 30
 		width: 300
 		height: 100
 	}
-
-	Keys.onUpPressed: rectangle.y -= 10
-    Keys.onDownPressed: rectangle.y += 10
-    Keys.onLeftPressed: rectangle.x += 10  // 原文中就是左键向右跑，不是我写错了噢。译者注
-    Keys.onRightPressed: rectangle.x -= 10
 }
