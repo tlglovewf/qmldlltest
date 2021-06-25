@@ -8,7 +8,7 @@ Window {
     width: 680
     height: 480
     title: qsTr("Hello World")
-
+	signal test
     BlueRect
     {
 		x: 20
@@ -78,19 +78,29 @@ Window {
 		}
 	}
 
+	TestButton{
+		x: 400
+		y: 400
+		width: 60
+		height: 30
+	}
+
 	Component.onCompleted: 
 	{
         colorMaker.color = Qt.rgba(0,180,120, 255);
         colorMaker.setAlgorithm(ColorMaker.RandomRGB);
 		timeLabel.text = "show time"
     }
+
+
+
 	//Á¬½ÓÐÅºÅ²Û
 	Connections 
 	{
         target: colorMaker;
         onColorChanged:{
             colorRect.color = color;
-        }
+        }	   
     }
 	Connections 
 	{
@@ -101,4 +111,7 @@ Window {
 			timeLabel.color = colorMaker.timeColor;
 		}
     }
+
+		
+
 }

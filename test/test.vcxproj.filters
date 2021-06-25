@@ -33,6 +33,9 @@
     <None Include="main.qml">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="TestButton.qml">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="ColorMarker.h">
